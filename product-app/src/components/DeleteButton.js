@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { removeProduct } from "../services/apiServices";
+import { removeProduct } from "../services/apiService";
 import ConfirmModal from "./ConfirmModal";
 
 const DeleteButton = ({ productId, onProductDeleted }) => {

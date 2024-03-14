@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { useProductsContext } from "../context/ProductsContext";
 import {
   addProduct,
   editProduct,
   getProductDetails,
-} from "../services/apiServices";
-import { useProductsContext } from "../context/ProductsContext";
-import { useParams } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+} from "../services/apiService";
 
 const ProductForm = () => {
   const { productId } = useParams();

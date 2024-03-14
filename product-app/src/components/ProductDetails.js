@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { getProductDetails } from "../services/apiService";
 import DeleteButton from "./DeleteButton";
-import { getProductDetails } from "../services/apiServices";
-import { useParams } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 
 const ProductDetails = () => {
   // Access route parameter

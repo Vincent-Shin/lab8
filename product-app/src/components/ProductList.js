@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useProductsContext } from "../context/ProductsContext";
-import { fetchProducts } from "../services/apiServices";
+import { fetchProducts } from "../services/apiService";
 
 const ProductList = () => {
   const { products, setProducts } = useProductsContext();

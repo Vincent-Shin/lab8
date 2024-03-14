@@ -40,6 +40,6 @@ const ConfirmModal = ({ show, onClose, onConfirm, title, children }) => {
       </div>
     </div>
   );
-};
+};  
 
 export default ConfirmModal;

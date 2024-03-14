@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import { ProductsProvider } from './context/ProductsContext'; // Adjust the import path as necessary
+import { ProductsProvider } from './context/ProductsContext';
 
 import './App.css';
 import HomePage from './components/HomePage';

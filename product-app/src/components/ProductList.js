@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { fetchProducts } from "../services/apiServices";
-import { useProductsContext } from "../context/ProductsContext";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useProductsContext } from "../context/ProductsContext";
+import { fetchProducts } from "../services/apiServices";
 
 const ProductList = () => {
   const { products, setProducts } = useProductsContext();
@@ -23,9 +23,7 @@ const ProductList = () => {
           className="list-group-item d-flex justify-content-between align-items-center hover-highlight"
           onClick={() => navigate(`/product/${product.id}`)}
         >
-          <span>
-            {index + 1}. {product.title}
-          </span>
+          <span>{index + 1}. {product.title}</span>
         </button>
       ))}
     </div>
